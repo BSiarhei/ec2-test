@@ -1,0 +1,23 @@
+{
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "js"
+  ],
+  "modulePathIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "testRegex": "(/__tests__/.*|(\\.|/)(spec))\\.(j|t)s?$",
+  "testPathIgnorePatterns": [
+    "/node_modules/"
+  ],
+  "modulePaths": [
+    "<rootDir>/src"
+  ],
+  "collectCoverage": false,
+  "transform": {
+    "\\.ts$": "ts-jest"
+  }
+}
