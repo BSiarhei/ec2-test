@@ -1,2 +1,2 @@
 #!/bin/bash
-node index &
+node /var/www/index &
