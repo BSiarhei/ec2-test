@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-npm run start
+cd /var/www
+node index
