@@ -10,13 +10,13 @@ hooks:
     runas: root
   BeforeInstall:
   - location: scripts/create_root_dir.sh
-    timeout: 300
+    timeout: 60
     runas: root
   AfterInstall:
   - location: scripts/install_dependencies.sh
-    timeout: 300
+    timeout: 180
     runas: root
   ApplicationStart:
   - location: scripts/start_server.sh
-    timeout: 300
+    timeout: 60
     runas: root
