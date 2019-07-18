@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 cd /var/www/scripts
 nohup bash start.sh
