@@ -1,11 +1,13 @@
-import * as http from 'http';
+import express from 'express';
 
 import { getResponse } from './libs';
 
-const server = http.createServer((req, res) => {
+const app = express();
+
+app.get('/', (req, res) => {
     res.end(getResponse('test1'));
 });
 
-server.listen(3000, () => {
+app.listen(3000, () => {
    console.log('server is running on 3000');
 });
