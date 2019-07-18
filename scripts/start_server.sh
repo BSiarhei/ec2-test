@@ -1,2 +1,3 @@
 #!/bin/bash
-pm2 start /var/www/index.js --name server
+cd /var/www
+pm2 start --name server npm -- run start
