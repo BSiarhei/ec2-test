@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-npm run start
+#!/bin/bash
+pm2 start /var/www/index.js --name server

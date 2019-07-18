@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-npm install
+#!/bin/bash
+cd /var/www

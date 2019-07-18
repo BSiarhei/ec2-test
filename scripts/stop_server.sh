@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-sudo ps aux | grep 'node server.js' | awk '{print $2}' | xargs kill -9
+#!/bin/bash
+pm2 stop server
 sudo rm -rf /var/www
