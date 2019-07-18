@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo mkdir /var/www
+sudo mkdir /var/www -p
