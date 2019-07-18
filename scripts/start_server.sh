@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /var/www/scripts
-nohup bash start.sh >start.out 2>start.err &
+pm2 start /var/www/index.js --name server

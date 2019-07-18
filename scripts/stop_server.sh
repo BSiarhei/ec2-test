@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo ps aux | grep 'node /var/www/index' | awk '{print $2}' | xargs kill -9
+pm2 stop server
 sudo rm -rf /var/www
