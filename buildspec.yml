@@ -1,20 +1,28 @@
-ersion: 0.2
+version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 10
     commands:
-    - echo Installing source NPM dependencies...
+     - echo Install completed on `date`
+  pre_build:
+    commands:
+    - echo Pre Build completed on `date`
     - npm install
   build:
     commands:
-    - echo Build started on `date`
-    - tsc
+     - echo Build started on `date`
+     - ls
+     - npm run test
+     - npm run build
+     - echo Build ended on `date`
   post_build:
     commands:
-    - echo Build completed on `date`
+     - echo Post Build completed on `date`
 
 artifacts:
   files:
-  - '**/*'
-  base-directory: './*'
+   - '**/*'
+  base-directory: './dist'
   discard-paths: yes
