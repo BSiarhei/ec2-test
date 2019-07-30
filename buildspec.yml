@@ -21,17 +21,18 @@ phases:
   post_build:
     commands:
       - mkdir ./dist/scripts/ -p
-      - cp -r ./scripts/ ./dist/scripts/
+      - cp -r ./scripts/ ./dist/
       - cp package.json ./dist/
       - cp package-lock.json ./dist/
       - cp appspec.yml ./dist/
-      - zip -r artifact.zip ./dist
       - cd ./dist
+      - zip -r artifact.zip ./
       - ls
       - cd ..
       - echo Post Build completed on `date`
 
 artifacts:
   files:
-   - 'artifact.zip'
+    - './dist/artifact.zip'
   base-directory: './'
+  discard-paths: yes
