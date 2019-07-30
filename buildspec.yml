@@ -19,6 +19,7 @@ phases:
      - echo Build ended on `date`
   post_build:
     commands:
+     - mkdir ./dist/scripts -p
      - cp -r ./scripts ./dist/scripts
      - echo Post Build completed on `date`
 
