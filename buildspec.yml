@@ -23,6 +23,8 @@ phases:
 
 artifacts:
   files:
-   - '**/*'
-  base-directory: './dist'
+   - './dist/**/*'
+   - 'package.json'
+   - 'package-lock.json'
+  base-directory: './'
   discard-paths: yes
