@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-- source: /
+- source: /artifact
   destination: /var/www/
 hooks:
   ApplicationStop:
