@@ -19,8 +19,10 @@ phases:
      - echo Build ended on `date`
   post_build:
     commands:
-     - mkdir ./dist/scripts -p
-     - cp -r ./scripts ./dist/scripts
+     - mkdir ./dist/scripts/ -p
+     - cp -r ./scripts/ ./dist/scripts/
+     - cd ./dist
+     - ls
      - echo Post Build completed on `date`
 
 artifacts:
