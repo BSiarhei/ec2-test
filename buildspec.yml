@@ -23,6 +23,7 @@ phases:
      - cp -r ./scripts/ ./dist/scripts/
      - cd ./dist
      - ls
+     - cd ..
      - echo Post Build completed on `date`
 
 artifacts:
