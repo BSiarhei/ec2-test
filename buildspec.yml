@@ -8,8 +8,8 @@ phases:
      - echo Install completed on `date`
   pre_build:
     commands:
-    - echo Pre Build completed on `date`
-    - npm install
+     - npm install
+     - echo Pre Build completed on `date`
   build:
     commands:
      - echo Build started on `date`
@@ -33,4 +33,3 @@ artifacts:
    - 'package-lock.json'
    - 'appspec.yml'
   base-directory: './'
-  discard-paths: yes
