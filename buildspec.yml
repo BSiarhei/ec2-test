@@ -14,7 +14,6 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - ls
       - npm run test
       - npm run build
       - echo Build ended on `date`
@@ -24,8 +23,6 @@ phases:
       - cp package-lock.json ./dist/
       - cd ./dist
       - zip -r artifact.zip ./
-      - ls
-      - cd ..
       - echo Post Build completed on `date`
 
 artifacts:
